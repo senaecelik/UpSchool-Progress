@@ -73,16 +73,9 @@ Tools namespace ile gelen özellikleri kullanabilmek için her xml dosyasının 
 xmlns:tools="http://schemas.android.com/tools"
 ```
 
-Örneğin bir layout tasarımında arkaplanı daha görünür olması için değiştirmek istiyoruz ama bu değişikliğin uygulamada kalıcı bir değişiklik olmasını istemiyoruz.
-
-```kotlin
-android:background="@color/<some-color>"
-```
-
-Bu şekilde kullandığımızda bu değişikliği geri almayı unutabiliriz.
-
+Tools özelliğini kullandığımızda bu yaptığımız değişiklik Android Stüdyo'da lokal olarak yapılmış olur ve uygulama APKsını etkilemez.
 
 ```kotlin
 tools:background="@color/<some-color>"
 ```
-Tools özelliğini kullandığımızda bu yaptığımız değişiklik Android Stüdyo'da lokal olarak yapılmış olur ve uygulama APKsını etkilemez.
+
