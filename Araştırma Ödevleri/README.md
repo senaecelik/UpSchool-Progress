@@ -2,7 +2,6 @@
 
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
-- [Öğrenci Cevapları](#x)
 
 
 ### <a name="1"></a> Araştırma Projesi 1
