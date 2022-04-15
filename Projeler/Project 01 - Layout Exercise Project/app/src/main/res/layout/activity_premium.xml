@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+
+    <ImageView
+        android:id="@+id/premiumImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="33dp"
+        android:src="@drawable/ic_premium_image"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/premium_image" />
+    <TextView
+        android:id="@+id/premiumTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_title"
+        app:layout_constraintTop_toBottomOf="@+id/premiumImage"
+        android:layout_marginTop="33dp"
+        style="@style/EntryTitleStyle"
+        android:textAlignment="center"
+       />
+
+    <RelativeLayout
+        android:id="@+id/pathRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/premiumTitle"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/box1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:contentDescription="@string/premium_image"
+        android:src="@drawable/ic_box_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/premiumImage"
+        app:layout_constraintTop_toBottomOf="@+id/pathRelative" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_label"
+        app:layout_constraintBottom_toTopOf="@+id/box1"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toTopOf="@+id/box1"
+        android:contentDescription="@string/premium_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_monthly"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        android:textSize="10sp"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/premium_11_99"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toTopOf="@+id/box1"
+        style="@style/price_style" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/price">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/premium_11_99"
+            style="@style/sub_price_style" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/premium_per_month"
+            style="@style/sub_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+
+            style="@style/sub_price_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/yearly_143_99" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/sub_title"
+        android:text="@string/premium_per_yearly"
+        />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/premium_image"
+        android:src="@drawable/ic_box_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/premiumImage"
+        app:layout_constraintTop_toBottomOf="@+id/pathRelative" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/premium_4_99"
+        style="@style/price_style"
+        app:layout_constraintStart_toStartOf="@+id/box"
+        app:layout_constraintTop_toTopOf="@+id/box" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/box_margin"
+        android:layout_marginStart="@dimen/box_margin"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/box"
+        app:layout_constraintTop_toBottomOf="@+id/price2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/sub_price_style"
+            android:text="@string/premium_4_99"
+            />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/sub_title"
+            android:text="@string/premium_per_month"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/box_margin"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/box"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yearly_59_99"
+           style="@style/sub_price_style"
+            />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          style="@style/sub_title"
+            android:text="@string/premium_per_yearly"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pink_label"
+        app:layout_constraintBottom_toTopOf="@+id/box"
+        app:layout_constraintEnd_toEndOf="@+id/box"
+        app:layout_constraintStart_toEndOf="@+id/price2"
+        app:layout_constraintTop_toTopOf="@+id/box"
+        android:contentDescription="@string/premium_image" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_yearly"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        android:textSize="10sp"
+        android:fontFamily="@font/acme"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="191dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/darkPurple"
+        android:text="@string/premium_button"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
