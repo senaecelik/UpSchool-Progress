@@ -15,3 +15,10 @@
 
 ### <a name="2"></a> Araştırma Projesi 2
 
+
+- Layout dizini içinde xml dosyalarımız için kullandığımız namespace nedir ?
+- Neden kullanılmaktadır ?
+- Nasıl kullanılmalıdır ?
+- Bir adet Tools (tools namespace) attribute kullanımını gösterir misiniz ? 
+
+
