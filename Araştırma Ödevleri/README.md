@@ -93,29 +93,26 @@ res klasörüne sağ tıklayın ve **new > android resource** directory tıklay�
 ### Nasıl kullanılır?
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
-<font-family xmlns:android="http://schemas.android.com/apk/res/android">
-
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <font
-        android:fontStyle="bold"
-        androd:android:fontWeight="400"
-        app:font="@font/lobstertwo_bold"
-      />
-
-    <font
-        android:fontStyle="normal"
-        androd:android:fontWeight="400"
+        app:fontStyle="normal"
+        app:fontWeight="400"
         app:font="@font/lobstertwo_regular"
         />
+  
     <font
-        android:fontStyle="italic"
-        androd:android:fontWeight="400"
+        app:fontStyle="italic"
+        app:fontWeight="400"
         app:font="@font/lobstertwo_italic"
         />
+
 </font-family>
 ```
 
 
-<img align="right" width="450" height="930" src="https://user-images.githubusercontent.com/48855691/163953935-9a83e022-b1f4-4c0d-b0fa-2f13d2cf59ce.png">
+
+<img align="right" width="480" height="1000" src="https://user-images.githubusercontent.com/48855691/163959897-bc452eef-0a86-4f59-a5d9-0f13856834d9.png">
 
 ### activity_main.xml
 
@@ -135,20 +132,24 @@ res klasörüne sağ tıklayın ve **new > android resource** directory tıklay�
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:text="@string/title"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textView2"
         style="@style/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/subTitle"
-        app:layout_constraintEnd_toEndOf="@+id/textView1"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+ 
 
     <TextView
         android:id="@+id/textView3"
@@ -170,19 +171,21 @@ res klasörüne sağ tıklayın ve **new > android resource** directory tıklay�
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Title">
-        <item name="android:fontFamily">@font/lobstertwo_bold</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">@color/purple_200</item>
     </style>
 
     <style name="subTitle">
-        <item name="android:fontFamily">@font/lobstertwo_regular</item>
-        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:fontFamily">@font/lobstertwo_bold</item>
+        <item name="android:textColor">@color/purple_500</item>
         <item name="android:textSize">32sp</item>
     </style>
 
     <style name="subTitle1">
-        <item name="android:fontFamily">@font/lobstertwo_italic</item>
+        <item name="android:fontFamily">@font/fonts</item>
+        <item name="android:textStyle">italic</item>
         <item name="android:textColor">@color/purple_500</item>
         <item name="android:textSize">32sp</item>
     </style>
