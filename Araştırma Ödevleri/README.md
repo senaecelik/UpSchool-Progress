@@ -2,9 +2,10 @@
 
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
+- [Araştırma Projesi 3 - Font Family](#3)
 
 
-### <a name="1"></a> Araştırma Projesi 1
+## <a name="1"></a> Araştırma Projesi 1
 
 - Lateinit neden kullanıyoruz?
 - Lateinit kullanımından bahseder misiniz?
@@ -53,12 +54,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-### <a name="2"></a> Araştırma Projesi 2
+## <a name="2"></a> Araştırma Projesi 2
 
 
 - Layout dizini içinde xml dosyalarımız için kullandığımız namespace nedir ?
-- Neden kullanılmaktadır ?
-- Nasıl kullanılmalıdır ?
+- Neden kullanılmaktadır?
+- Nasıl kullanılmalıdır?
 - Bir adet Tools (tools namespace) attribute kullanımını gösterir misiniz ? 
 
 Cevap: 
@@ -78,3 +79,118 @@ Tools özelliğini kullandığımızda bu yaptığımız değişiklik Android St
 tools:background="@color/<some-color>"
 ```
 
+## <a name="3"></a> Araştırma Projesi 3
+
+ - Font family dosyası nasıl oluşturulup kullanıyoruz? 
+ - Niçin böyle kullanımı tercih ediyoruz? 
+
+**Cevap:**
+
+res klasörüne sağ tıklayın ve **new > android resource** directory tıklayın. font seçerek bir ***font*** dizini oluşturulur. İnternet üzerinde font kaynakları indirerek, bu fontları font resource içine ekliyoruz. 
+
+### Nasıl oluşturulur?
+
+<img align="center" src="https://user-images.githubusercontent.com/48855691/163952320-cb57f674-72ba-4a1c-b4c8-e7928eae239c.gif">
+
+### Nasıl kullanılır?
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:fontStyle="bold"
+        androd:android:fontWeight="400"
+        app:font="@font/lobstertwo_bold"
+      />
+
+    <font
+        android:fontStyle="normal"
+        androd:android:fontWeight="400"
+        app:font="@font/lobstertwo_regular"
+        />
+    <font
+        android:fontStyle="italic"
+        androd:android:fontWeight="400"
+        app:font="@font/lobstertwo_italic"
+        />
+</font-family>
+```
+
+
+<img align="right" width="450" height="930" src="https://user-images.githubusercontent.com/48855691/163953935-9a83e022-b1f4-4c0d-b0fa-2f13d2cf59ce.png">
+
+### activity_main.xml
+
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/subTitle"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/subTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subTitle1"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+### style.xml Dosyası
+
+
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title">
+        <item name="android:fontFamily">@font/lobstertwo_bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/purple_200</item>
+    </style>
+
+    <style name="subTitle">
+        <item name="android:fontFamily">@font/lobstertwo_regular</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="subTitle1">
+        <item name="android:fontFamily">@font/lobstertwo_italic</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+</resources>
+```
+
+### Niçin böyle kullanımı tercih ediyoruz? 
+- Bazen Google sağladığı paketler silinmiş, güncellenmiş olabilir. Projemizin içinde bulunursa, bu tür sorunları yaşamayız.
