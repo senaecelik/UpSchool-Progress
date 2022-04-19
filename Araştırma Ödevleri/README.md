@@ -112,7 +112,7 @@ res klasörüne sağ tıklayın ve **new > android resource** directory tıklay�
 
 
 
-<img align="right" width="480" height="1000" src="https://user-images.githubusercontent.com/48855691/163959897-bc452eef-0a86-4f59-a5d9-0f13856834d9.png">
+<img align="right" width="400" height="800" src="https://user-images.githubusercontent.com/48855691/163959897-bc452eef-0a86-4f59-a5d9-0f13856834d9.png">
 
 ### activity_main.xml
 
