@@ -52,8 +52,6 @@ class MainActivity : AppCompatActivity() {
 ```
 
 
-
-
 ## <a name="2"></a> Araştırma Projesi 2
 
 
