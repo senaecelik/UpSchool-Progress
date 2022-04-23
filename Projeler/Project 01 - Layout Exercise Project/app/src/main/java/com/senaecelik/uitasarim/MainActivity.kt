@@ -3,26 +3,31 @@ package com.senaecelik.uitasarim
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import com.senaecelik.uitasarim.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-
-    //Burada buttonu tanımladıktan sonra değer atama işlemini sonradan yapacağımızı söylüyoruz.
-    //Aslında "bunun null olmadığını biliyorum, ama şu anda değer atamak istemiyorum.
-    //Daha sonra değer ataması yapacağım, söz veriyorum" demektir.
-    private lateinit var button: Button
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var dataBinding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        dataBinding = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
-        //Burada buttonuma değer ataması yapıldı.
-        button = findViewById(R.id.button_start_now)
+        dataBinding.buttonStartNow.setOnClickListener (this)
+        }
 
-        button.setOnClickListener{
-            val intent = Intent(this, StartActivity::class.java)
-            startActivity(intent)
-            finish()
+    override fun onClick(view: View?) {
+        when(view?.id){
+            dataBinding.buttonStartNow.id -> {
+                val intent = Intent(this, StartActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
     }
+
+
 }
