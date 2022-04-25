@@ -1,5 +1,5 @@
 
-<img align="right" width="300" height="250" src="https://c.tenor.com/Dq8nm__4of0AAAAC/gimme-code-gimme.gif">
+<img align="right" width="300" height="250" src="https://thumbs.gfycat.com/DifficultLimpingBubblefish-max-1mb.gif">
 
 # Projeler
 
