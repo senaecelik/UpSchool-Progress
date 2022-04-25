@@ -85,7 +85,6 @@ tools:background="@color/<some-color>"
 P.S. [Bu linkten](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml ) faydalanarak font family projenizde deneyebilirsiniz.
 
 **Cevap:**
-Bir uygulama yazılacağı zaman genellikle bütün alanlarda kullanılabilek için bir font seçilir. FontFamily ise bu konuda yardımcı olarak seçilen veya oluşturulan fontun uygulamanın her alanında kullanılması konusunda kolaylık sağlar. FontFamily, çeşitli stillerde metin elde edebilmek için kullanılan bir yazı tipi paketidir.
 
 res klasörüne sağ tıklayın ve **new > android resource** directory tıklayın. font seçerek bir ***font*** dizini oluşturulur. İnternet üzerinde font kaynakları indirerek, bu fontları font resource içine ekliyoruz. 
 
