@@ -1,5 +1,5 @@
 
-<img align="right" width="300" height="250" src="https://thumbs.gfycat.com/DifficultLimpingBubblefish-max-1mb.gif">
+<img align="right" width="400" height="250" src="https://thumbs.gfycat.com/DifficultLimpingBubblefish-max-1mb.gif">
 
 # Projeler
 
