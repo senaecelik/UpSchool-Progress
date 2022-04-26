@@ -206,3 +206,6 @@ res klasörüne sağ tıklayın ve **new > android resource** directory tıklay�
 
 P.S. [Bu linkten](https://developer.android.com/guide/topics/resources/animation-resource#Property) faydalanabilirsiniz.
 
+**Cevap:**
+
+ObjectAnimator belirli bir süre boyunca bir nesnenin belirli bir özelliğini canlandırır. Animator ise belirli bir süre boyunca bir animasyonu gerçekleştirir.
