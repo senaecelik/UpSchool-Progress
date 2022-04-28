@@ -1,7 +1,7 @@
 
-<img align="right" width="350" ght="250" src="https://thumbs.gfycat.com/DifficultLimpingBubblefish-max-1mb.gif">
 
 # Projeler
+<img align="right" width="350" ght="250" src="https://thumbs.gfycat.com/DifficultLimpingBubblefish-max-1mb.gif">
 
 - [Project 01 - Read Me](https://github.com/senaecelik/UpSchool-Progress/tree/main/Projeler/Project%2001%20-%20Layout%20Exercise%20Project#readme)
     - Tasarım geliştirme süreçleri bitmiş yeni bir projemiz var verilen UI için sadece layout oluşturulmuştur.
