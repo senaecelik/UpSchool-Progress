@@ -21,6 +21,7 @@ Uygulamada gezinirken NavController’a Navigation graph içerisindeki belirli b
 
 - Geçmek istediğim diğer fragmente ok çıkararak bağladım. Burada oluşan action ile hangi fragmentdan hangisine geçtiğini görebiliriz.
 <a href="#"><img align="right" width="400" height="800" src="https://user-images.githubusercontent.com/48855691/168424120-1c335f03-216b-4267-bca5-cf2aa101a39c.gif">
+
 ```kotlin
   <fragment
         android:id="@+id/mainFragment"
@@ -33,6 +34,7 @@ Uygulamada gezinirken NavController’a Navigation graph içerisindeki belirli b
 ```
   
 - Diğer fragmentların XML dosyalarını kodladıktan sonra 'main_fragment' içerisine nav_graph bağlamamız gerekiyor.
+
 ```kotlin 
   <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -50,6 +52,7 @@ Uygulamada gezinirken NavController’a Navigation graph içerisindeki belirli b
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 - MainFragment içerisinde dataBinding ile geçiş sağladım. 
+
 ```kotlin
   class MainFragment : Fragment() {
 
