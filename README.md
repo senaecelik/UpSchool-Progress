@@ -5,3 +5,7 @@
 
 - This repository contains assignments and projects from the Up School Android Developer Bootcamp process.
 
+  - Araştırmalar
+  - Ek projeler
+  - Projeler
+
