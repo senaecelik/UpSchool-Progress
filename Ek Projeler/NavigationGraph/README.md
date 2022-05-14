@@ -14,14 +14,13 @@ Uygulamada gezinirken NavController’a Navigation graph içerisindeki belirli b
 - app dosyasının üstüne geliyoruz. Sağ tık yapıyoruz “Android Resource File” a tıklayıp geri kalan konfigurasyonları aşağıdaki gibi yapıyoruz. 
 <img align="center" width="800" height="500" src="https://user-images.githubusercontent.com/48855691/168424524-ee4706d1-15a4-4677-9978-a47799a5c22f.jpg">
 - Res dizininin altında “navigation” adlı bir dizin oluşacak.
-  
-  <a href="#"><img align="center" width="800" height="500" src="https://user-images.githubusercontent.com/48855691/168424604-d51a8043-6378-4db4-b1ab-2f00316baeed.jpg">
+
+<img align="center" width="800" height="500" src="https://user-images.githubusercontent.com/48855691/168424604-d51a8043-6378-4db4-b1ab-2f00316baeed.jpg">
 
 - Ve açılmasını istediğimiz ilk fragmenti seçiyoruz ben burada “fragment_main” i seçtim.
 
 - Geçmek istediğim diğer fragmente ok çıkararak bağladım. Burada oluşan action ile hangi fragmentdan hangisine geçtiğini görebiliriz.
-  
-
+<img align="right" width="400" height="800" src="https://user-images.githubusercontent.com/48855691/168424120-1c335f03-216b-4267-bca5-cf2aa101a39c.gif">
 ```kotlin
   <fragment
         android:id="@+id/mainFragment"
