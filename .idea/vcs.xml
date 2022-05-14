@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Ek Projeler/NavigationGraph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Ek Projeler/NavigationGraph/NavigationGraph" vcs="Git" />
   </component>
 </project>
