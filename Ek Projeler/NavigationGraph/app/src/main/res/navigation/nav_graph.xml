@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.senaecelik.navigationgraph.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_noMessageFragment"
+            app:destination="@id/noMessageFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/noMessageFragment"
+        android:name="com.senaecelik.navigationgraph.NoMessageFragment"
+        android:label="NoMessageFragment" >
+        <action
+            android:id="@+id/action_noMessageFragment_to_noFavouritesFragment"
+            app:destination="@id/noFavouritesFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/noFavouritesFragment"
+        android:name="com.senaecelik.navigationgraph.NoFavouritesFragment"
+        android:label="NoFavouritesFragment" >
+        <action
+            android:id="@+id/action_noFavouritesFragment_to_noConnectionFragment"
+            app:destination="@id/noConnectionFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/noConnectionFragment"
+        android:name="com.senaecelik.navigationgraph.NoConnectionFragment"
+        android:label="NoConnectionFragment" >
+        <action
+            android:id="@+id/action_noConnectionFragment_to_resultNotFoundFragment"
+            app:destination="@id/resultNotFoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultNotFoundFragment"
+        android:name="com.senaecelik.navigationgraph.ResultNotFoundFragment"
+        android:label="ResultNotFoundFragment" >
+        <action
+            android:id="@+id/action_resultNotFoundFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

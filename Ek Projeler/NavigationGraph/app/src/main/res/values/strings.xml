@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NavigationGraph</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_no_messages">No Messages</string>
+    <string name="string_no_mess_sub">When you have messages you’ll\nsee them here</string>
+    <string name="string_no_fav">No Favorites</string>
+    <string name="string_no_fav_sub">You can add an item to your\nfavourites by clicking “Star Icon”</string>
+    <string name="string_go_back">Go Back</string>
+    <string name="string_lost_connection">Lost Connection</string>
+    <string name="string_sub_no_connection">Whoops, no internet connection found.\nPlease check your connection</string>
+    <string name="string_try_again">Try Again</string>
+    <string name="string_result_not_found">Result Not Found</string>
+    <string name="string_sub_result_not_found">Please try again with another\nkeywords or maybe use generic term</string>
+    <string name="string_search_again">Search Again</string>
+</resources>
