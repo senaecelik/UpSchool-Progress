@@ -2,7 +2,7 @@
 ### Android Studio Bootcamp
 
 - This repository contains assignments and projects from the Up School Android Developer Bootcamp process.
- <img align="right" width="270" height="250" src="https://media2.giphy.com/media/13HgwGsXF0aiGY/giphy.gif">
+ <img align="right" width="250" height="200" src="https://media2.giphy.com/media/13HgwGsXF0aiGY/giphy.gif">
 
 
  |         Araştırmalar          |Projeler|          Ek Projeler         |
