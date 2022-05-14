@@ -20,6 +20,7 @@ Uygulamada gezinirken NavController’a Navigation graph içerisindeki belirli b
 - Ve açılmasını istediğimiz ilk fragmenti seçiyoruz ben burada “fragment_main” i seçtim.
 
 - Geçmek istediğim diğer fragmente ok çıkararak bağladım. Burada oluşan action ile hangi fragmentdan hangisine geçtiğini görebiliriz.
+  
 <a href="#"><img align="right" width="400" height="800" src="https://user-images.githubusercontent.com/48855691/168424120-1c335f03-216b-4267-bca5-cf2aa101a39c.gif">
 
 ```kotlin
